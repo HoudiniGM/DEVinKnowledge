@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Black+Ops+One&display=swap'); /* font-family: Bebas Neue */
+ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+input, textarea, button {
+    border-radius: 15px;
+}
+
+.container-icon {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.expandir {
+    max-height: fit-content !important;
+}
+
+/* ######## HEADER ######## */
+header {
+    background: linear-gradient(rgb(184, 34, 184), rgb(41, 188, 207));
+    display: flex;
+    height: 80px;
+    gap: 50px;
+    padding: 10px;
+}
+
+header p {
+    align-self: center;
+    color: white;
+    font-size: 35px;
+    font-family: Black Ops One;
+    text-shadow: 0px 5px black;
+}
+
+header p span {
+    font-size: 50px;
+}
+
+header img {
+    border: 1px solid black;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px 5px black;
+}
+/* ################################ */
+
+/* ############ MAIN ############ */
+main {
+    display: flex;
+}
+/* ############################## */
+
+/* ######## FORMULÁRIO ########### */
+form {
+    width: 300px;
+    min-width: 300px;
+    height: calc(100vh - 80px);
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background-color: brown;
+}
+
+form input, form select, form textarea {
+    margin-bottom: 10px;
+}
+/* ############################## */
+
+/* ########### FEED ############# */
+#feed {
+    flex-grow: 1;
+    height: calc(100vh - 80px);
+    background-color: rgb(235, 235, 235);    
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+/* CATEGORIA */
+#section-categoria {
+    display: flex;
+    justify-content: center;
+}
+
+#section-categoria div {
+    width: 15%;
+}
+/* CATEGORIA */
+
+#section-barra {
+    height: 30px;
+    display: flex;
+    gap: 10px;
+}
+
+#section-barra input {
+    flex-grow: 1;
+}
+
+#section-barra button {
+    height: 30px;   
+    width: 30px;
+}
+
+.icon {
+    height: 60%;
+}
+
+#section-card {
+    width: 100%;
+    overflow: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    
+}
+
+.card {
+    background-color: rgb(252, 253, 180);
+    border: 1px solid black;
+    width: 300px;
+    min-height: 250px;
+    max-height: 250px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.card-descricao {
+    overflow: hidden;
+    flex-grow: 1;
+}
+
+.group-icons {
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 1;
+    align-items: flex-end;
+}

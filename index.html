@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./imagens/pontas.png" type="image/x-icon">
+    <script src="app.js" async></script>
+    <title>DEVinKnowledge</title>
+</head>
+<body>
+    <header>
+        <img src="./imagens/pontas.png" alt="logo">
+        <p>DEVin<span>Knowledge</span></p>
+    </header>
+    
+    <main>
+        <form id="bloco-edicao">
+            <label for="form-titulo">Título</label>
+            <input type="text" id="form-titulo" required>
+    
+            <label for="form-skill">Linguagem/Skill</label>
+            <input type="text" id="form-skill" required>
+    
+            <label for="form-categoria">Categoria</label>
+            <select id="form-categoria">
+                <option value="">- Selecione uma categoria -</option>
+                <option value="Front-end">Front-end</option>
+                <option value="Back-end">Back-end</option>
+                <option value="Fullstack">Fullstack</option>
+                <option value="Soft Skill">Soft Skill</option>
+            </select>
+    
+            <label for="form-descricao">Descrição</label>
+            <textarea name="" id="form-descricao" cols="30" rows="10"></textarea>
+    
+            <label for="form-video">Vídeo do YouTube</label>
+            <input type="text" id="form-video">
+    
+            <span> <!-- ALINHADOR DOS BOTÕES -->
+                <button type="reset" id="form-limpar">Limpar</button>
+                <button type="submit" id="form-salvar">Salvar</button>
+            </span>
+        </form>
+
+        <section id="feed">
+            <section id="section-categoria">
+                <div>
+                    <p>
+                        Total<br>
+                        <span></span>
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        Front-end<br>
+                        <span></span>
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        Back-end<br>
+                        <span></span>
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        Fullstack<br>
+                        <span></span>
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        Soft Skill<br>
+                        <span></span>
+                    </p>
+                </div>
+            </section>
+
+            <section id="section-barra">
+                <input type="text" placeholder="Digite um título para buscar..." id="barra">
+                <button class="container-icon">
+                    <img class="icon" src="imagens/search.png" alt="pesquisar">
+                </button>
+                <button class="container-icon">
+                    <img class="icon" src="imagens/cross.png" alt="apagar">
+                </button>
+            </section>
+
+            <ul id="section-card">
+                <li class="card">
+                    <h2>Grid vs Flex-Box</h2>
+                    <p><strong>Linguagem/Skill: </strong></p>
+                    <p><strong>Categoria: </strong></p>
+                    <p class="card-descricao">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque veritatis ad accusamus, perferendis nam dolor natus est earum fuga obcaecati repellendus laudantium neque blanditiis placeat possimus sint minima vitae repudiandae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ipsam ducimus exercitationem, vitae assumenda expedita provident? Odit, libero tenetur molestiae quos repellendus doloremque et nisi. Voluptatibus labore laudantium blanditiis aperiam.</p>
+                    <div class="group-icons">
+                        <button class="container-icon botao-expandir">
+                            <img class="icon botao-expandir" src="imagens/expand.png" alt="expandir">
+                        </button>
+                        <button class="container-icon botao-editar">
+                            <img class="icon botao-editar" src="imagens/edit.png" alt="editar">
+                        </button>
+                        <a href="#" target="_blank">
+                            <button class="container-icon">
+                                <img class="icon" src="imagens/youtube.png" alt="youtube">
+                            </button>
+                        </a>
+                        <button class="container-icon botao-excluir">
+                            <img class="icon botao-excluir" src="imagens/trash.png" alt="excluir">
+                        </button>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+    </main>
+</body>
+</html>
