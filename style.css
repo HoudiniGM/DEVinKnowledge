@@ -12,8 +12,11 @@ body {
     height: 100vh;
 }
 
-input, textarea, button {
-    border-radius: 15px;
+input, textarea, button, select {
+    height: 30px;
+    border-radius: 10px;
+    padding: 3px;
+    resize: none;
 }
 
 .container-icon {
@@ -24,8 +27,13 @@ input, textarea, button {
     align-items: center;
 }
 
-.expandir {
+.maximizar {
+    width: 100% !important;
     max-height: fit-content !important;
+}
+
+.esconder {
+    display: none !important;
 }
 
 /* ######## HEADER ######## */
@@ -52,7 +60,7 @@ header p span {
 header img {
     border: 1px solid black;
     border-radius: 50%;
-    box-shadow: 0px 0px 10px 5px black;
+    box-shadow: 0px 0px 10px 2px black;
 }
 /* ################################ */
 
@@ -64,15 +72,15 @@ main {
 
 /* ######## FORMULÁRIO ########### */
 form {
-    width: 300px;
-    min-width: 300px;
+    width: 350px;
+    min-width: 350px;
     height: calc(100vh - 80px);
     margin: 0;
     padding: 20px;
     display: flex;
     flex-direction: column;
     gap: 5px;
-    background-color: brown;
+    background: linear-gradient(rgb(39, 190, 209), rgb(31, 33, 175));
 }
 
 form input, form select, form textarea {
@@ -94,11 +102,19 @@ form input, form select, form textarea {
 #section-categoria {
     display: flex;
     justify-content: center;
+    gap: 30px;
 }
 
 #section-categoria div {
-    width: 15%;
+    box-shadow: 2px 1px 2px black;
+    border-radius: 10px;
+    background: linear-gradient(white, blue 99%);
+    padding: 10px;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
 }
+
 /* CATEGORIA */
 
 #section-barra {
@@ -117,7 +133,7 @@ form input, form select, form textarea {
 }
 
 .icon {
-    height: 60%;
+    height: 80%;
 }
 
 #section-card {
@@ -132,7 +148,7 @@ form input, form select, form textarea {
 .card {
     background-color: rgb(252, 253, 180);
     border: 1px solid black;
-    width: 300px;
+    width: 280px;
     min-height: 250px;
     max-height: 250px;
     padding: 10px;
